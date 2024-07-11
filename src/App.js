@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ApprovalRequestForm from './Components/ApprovalRequestForm';
+import ApprovalRequestTable from './Components/ApprovalRequestTable';
+import EmployeeForm from './Components/EmployeeForm';
+import EmployeeTable from './Components/EmployeeTable';
+import LeaveRequestForm from './Components/LeaveRequestForm';
+import LeaveRequestTable from './Components/LeaveRequestTable';
+import ProjectForm from './Components/ProjectForm';
+import ProjectTable from './Components/ProjectTable';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EmployeeTable/>
+      <EmployeeForm/>        
+      <ProjectTable/>
+      <ProjectForm/>
+      <LeaveRequestTable/>
+      <LeaveRequestForm/>
+      <ApprovalRequestTable/>
+      <ApprovalRequestForm/>
+      
     </div>
   );
 }
